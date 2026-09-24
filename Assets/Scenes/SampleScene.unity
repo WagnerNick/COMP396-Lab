@@ -276,7 +276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &405220541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,6 +289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b860a6cebae914e8518739494d43c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Core::Core.FSM.NPCStateMachine
+  harvestEvent: {fileID: 11400000, guid: 5adb862053da56c42846f3f1a3b7eb15, type: 2}
+  isHarvestReady: 0
 --- !u!136 &405220542
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -403,7 +405,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 1
+  m_BaseOffset: 0.95
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!1 &410087039
@@ -1179,6 +1181,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2089977944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2089977946}
+  - component: {fileID: 2089977945}
+  - component: {fileID: 2089977947}
+  - component: {fileID: 2089977948}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2089977945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089977944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9aeec3969c55aa4c98af0a817ab092a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Core::EventTimer
+  channelPos: {fileID: 11400000, guid: 5adb862053da56c42846f3f1a3b7eb15, type: 2}
+  harvestLocations: []
+--- !u!4 &2089977946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089977944}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2089977947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089977944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9779225e4408e4458ce71ed8bd424da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Core::Spawner
+--- !u!114 &2089977948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089977944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf212d9d74bb0514d8ac3b6729c1ade8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Core::FarmerFactory
+  farmerPrefab: {fileID: 5730280812124562033, guid: 5d6dc60e8898a564aa9a5a488d7c2547, type: 3}
 --- !u!1 &2125650730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,3 +1300,4 @@ SceneRoots:
   - {fileID: 741861491}
   - {fileID: 405220545}
   - {fileID: 2125650731}
+  - {fileID: 2089977946}
