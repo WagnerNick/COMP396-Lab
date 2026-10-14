@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3747e18526acf4f409a6e98af452ce0b, type: 3}
+  m_Name: Grass
+  m_EditorClassIdentifier: Core::Core.WFC.TileData
+  tileName: Grass
+  prefab: {fileID: 8083868757047542241, guid: f1318c869a5d0ab499d48af856d6d99a, type: 3}
+  validBottom:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 450034089d549b847888a2068c81c477, type: 2}
+  - {fileID: 11400000, guid: 7637b8dc9a13d9443840da324fad8cb3, type: 2}
+  validLeft:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: ce6491dde137aa54aa900695acc7032a, type: 2}
+  - {fileID: 11400000, guid: 21b10e2cbdfdc7443886f2cffed57bcd, type: 2}
+  validRight:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: e48e78fe37043f844a4bd343adcf01bb, type: 2}
+  - {fileID: 11400000, guid: c68c35e0854fb6144ad2187cb62fc1a2, type: 2}
+  validTop:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 6e27433f2d5523045bf6ec6304c517da, type: 2}
+  - {fileID: 11400000, guid: d220e6c5a3ac45443894f4a8a1e140ac, type: 2}

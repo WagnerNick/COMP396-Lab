@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3747e18526acf4f409a6e98af452ce0b, type: 3}
+  m_Name: Side_R
+  m_EditorClassIdentifier: Core::Core.WFC.TileData
+  tileName: Sidewalk_Right
+  prefab: {fileID: 8083868757047542241, guid: f267628d632d854429db74b692d9d9c9, type: 3}
+  validBottom:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 10638010fd2cad3449c1d52f046dc66c, type: 2}
+  validLeft:
+  - {fileID: 11400000, guid: 10638010fd2cad3449c1d52f046dc66c, type: 2}
+  validRight:
+  - {fileID: 11400000, guid: bf229c151a5b34d4c97f4a08f6bd1516, type: 2}
+  validTop:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 10638010fd2cad3449c1d52f046dc66c, type: 2}

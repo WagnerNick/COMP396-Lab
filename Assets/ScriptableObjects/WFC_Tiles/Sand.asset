@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3747e18526acf4f409a6e98af452ce0b, type: 3}
+  m_Name: Sand
+  m_EditorClassIdentifier: Core::Core.WFC.TileData
+  tileName: Sand
+  prefab: {fileID: 8083868757047542241, guid: 737f43c03774b6b419666794faf45bc7, type: 3}
+  validBottom:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 7637b8dc9a13d9443840da324fad8cb3, type: 2}
+  - {fileID: 11400000, guid: c0d4781c021708c4394b1a6c85bc3c9f, type: 2}
+  validLeft:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 21b10e2cbdfdc7443886f2cffed57bcd, type: 2}
+  - {fileID: 11400000, guid: 6fe97e7ddaa02284f810ae7daa379b77, type: 2}
+  validRight:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: c68c35e0854fb6144ad2187cb62fc1a2, type: 2}
+  - {fileID: 11400000, guid: 0f22029d1c7e04f4382b26a1c2d2e52b, type: 2}
+  validTop:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: d220e6c5a3ac45443894f4a8a1e140ac, type: 2}
+  - {fileID: 11400000, guid: c0d4781c021708c4394b1a6c85bc3c9f, type: 2}
